@@ -1,0 +1,33 @@
+
+
+{% extends "base.html" %}
+
+{% block content %}
+    {% for article in paginator.page_content() %}
+	<div class="post">
+	    {# the title #}
+	    <div class="ptitle">
+		<a href=" {{ article.page_url }}">
+		    <h2>
+			<span>
+			    {{ article.title }}
+			</span>
+		    </h2>
+		</a>
+	    </div>
+	    <div class="pcontent">
+		{# the content #}
+		{{ article.html }}
+	    </div>
+	</div>
+    {% endfor %}
+
+
+    {% if paginator.has_prev() %}
+	<a class="paginator-newer" href="index{{ paginator.previous()}}.html">M-v</a>
+    {% endif %}
+
+    {% if paginator.has_next() %}
+	<a class="paginator-older" href="index{{ paginator.next()}}.html">C-v</a>
+    {% endif %}
+{% endblock %}

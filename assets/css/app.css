@@ -1,0 +1,156 @@
+
+
+html {
+    font-family: 'Courier New', sans-serif;
+}
+
+body {
+    background-color: #151515;
+    color: #FFF;
+}
+
+#posts {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#posts pre {
+    margin-left: 10px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #66D9EF;
+}
+
+a:hover {
+    background-color: #F92672;
+    color: #FFF;
+}
+
+
+.post .ptitle a h2 span:hover {
+    background-color: #F92672;
+    color: #FFF;
+}
+
+
+#blog-header pre{
+    text-align: center;
+}
+
+#navbar {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+}
+
+/* Blinking cursor from xip.io */
+
+div.cursor {
+    display: inline-block;
+    background: #111;
+    margin-left: 1px;
+
+    -webkit-animation: blink 2s linear 0s infinite;
+    -moz-animation: blink 2s linear 0s infinite;
+    -ms-animation: blink 2s linear 0s infinite;
+    -o-animation: blink 2s linear 0s infinite;
+}
+@-webkit-keyframes blink {
+    0%   { background: #FFF }
+    47%  { background: #FEF }
+    50%  { background: #151515 }
+    97%  { background: #151515 }
+    100% { background: #FEF }
+}
+
+@-moz-keyframes blink {
+    0%   { background: #FFF }
+    47%  { background: #FEF }
+    50%  { background: #151515 }
+    97%  { background: #151515 }
+    100% { background: #FEF }
+}
+
+@-ms-keyframes blink {
+    0%   { background: #FFF }
+    47%  { background: #FEF }
+    50%  { background: #151515 }
+    97%  { background: #151515 }
+    100% { background: #FEF }
+}
+
+@-o-keyframes blink {
+    0%   { background: #FFF }
+    47%  { background: #FEF }
+    50%  { background: #151515 }
+    97%  { background: #151515 }
+    100% { background: #FEF }
+}
+
+/* some markdown like stuff? */
+.post .ptitle h2::before {
+    content: "##  ";
+}
+
+.post h3::before {
+    content: "###  ";
+}
+
+
+.post  h4::before {
+    content: "####  ";
+}
+
+.post  h5::before {
+    content: "#####  ";
+}
+
+.post h6::before {
+    content: "######  ";
+}
+
+.post .pcontent {
+    margin-left: 40px;
+}
+
+.post pre {
+    display: block;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+.post:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.post table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.post table, th, td {
+    border: 1px solid white;
+}
+
+.post th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.paginator-newer {
+    float: left;
+}
+
+.paginator-older {
+    float: right;
+}
