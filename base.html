@@ -6,6 +6,11 @@
 	<meta charset="UTF-8" />
 	<link href="assets/css/app.css" rel="stylesheet"/>
 	<link href="assets/css/codestyle.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" type="text/css" media="screen" />
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700" rel="stylesheet">
+	<title>
+	    {% block title %} Mohamed's blog {% endblock %}
+	</title>
     </head>
 
     <body>
@@ -15,14 +20,15 @@
 (venv) $ tree
 
 ├─── <a href="index.html">index.html</a>
-├─── <a href="tags.html">tags</a>
+├─── <a href="tags.html">tags/</a>
 ├─── <a href="">rss</a>
-└─── <a href="about.html">about</a>
+└─── <a href="about.html">about.html</a>
 (venv) $ <div class="cursor"> </div>
 	   </pre>
 	</div>
 	
 	
+
 	<div id="content">
 	    <div id="blog-header">
 		<pre>
@@ -45,6 +51,39 @@ __  ___      _                              _ _       _     _
 	    </div>
 	    
 	</div>
+	<br style="clear:both" />
+	<br style="clear:both" />
+	<hr/>
+	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" id="cc"  style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
+	<span id="txtcop">
+	    This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+	</span>
+	<br style="clear:both" />
+
+	<script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+      $('.imgs').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+    </script>
 	
     </body>
 </html>

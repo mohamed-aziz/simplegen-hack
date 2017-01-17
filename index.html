@@ -15,6 +15,7 @@
 		    </h2>
 		</a>
 	    </div>
+	    <div class="pdate">== {{ article.date.strftime('%d %B %Y, a calm %A at %H:%M')  }} ==</div>
 	    <div class="pcontent">
 		{# the content #}
 		{{ article.html }}

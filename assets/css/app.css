@@ -1,7 +1,29 @@
 
-
 html {
-    font-family: 'Courier New', sans-serif;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+
+#txtcop {
+    float: right;
+
+}
+
+#cc {
+    float: left;
 }
 
 body {
@@ -18,7 +40,7 @@ body {
     margin-left: 10px;
 }
 
-img {
+img:not(#cc) {
     max-width: 100%;
     display: block;
     margin: 0 auto;
